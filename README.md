@@ -14,15 +14,18 @@ This Java program is an interpreter for evaluating postfix expressions. It takes
 4. **Result**: After processing the entire expression, the final result is printed on the stack.
 
 ## Example:
+
 ### Input:
+Enter a postfix expression: 3 4 + 2 * 7 /
+
 ### Output:
-Rule 2: Operand(3) := 3 Stack: [3.0]
-Rule 2: Operand(4) := 4 Stack: [3.0, 4.0]
-Rule 1: Operator(+) := + Rule 3: Result(7.0) Operand(3.0) Operand(4.0) Operator(+) Stack: [7.0]
-Rule 2: Operand(2) := 2 Stack: [7.0, 2.0]
-Rule 1: Operator() := * Rule 3: Result(14.0) Operand(7.0) Operand(2.0) Operator() Stack: [14.0]
-Rule 2: Operand(7) := 7 Stack: [14.0, 7.0]
-Rule 1: Operator(/) := / Rule 3: Result(2.0) Operand(14.0) Operand(7.0) Operator(/) Stack: [2.0]
+**Rule 2:** Operand(3) := 3 Stack: [3.0]
+**Rule 2:** Operand(4) := 4 Stack: [3.0, 4.0]
+**Rule 1:** Operator(+) := + Rule 3: Result(7.0) Operand(3.0) Operand(4.0) Operator(+) Stack: [7.0]
+**Rule 2:** Operand(2) := 2 Stack: [7.0, 2.0]
+**Rule 1:** Operator() := * Rule 3: Result(14.0) Operand(7.0) Operand(2.0) Operator() Stack: [14.0]
+**Rule 2:** Operand(7) := 7 Stack: [14.0, 7.0]
+**Rule 1:** Operator(/) := / Rule 3: Result(2.0) Operand(14.0) Operand(7.0) Operator(/) Stack: [2.0]
 
 ### Explanation:
 1. The operands `3` and `4` are pushed onto the stack.
